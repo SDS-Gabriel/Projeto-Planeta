@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+body { 
+    background: linear-gradient(to right, #ffffff, #e0e7ff); 
+    min-height: 100vh; 
+}
+
+header { display: flex; justify-content: space-between; padding: 40px 80px; align-items: center; }
+
+.navbar ul { display: flex; gap: 50px; list-style: none; }
+.navbar a { text-decoration: none; color: #000; font-weight: 500; transition: 0.3s; }
+.navbar a:hover { color: #4070f4; text-decoration: underline; }
+
+main { padding: 40px 80px; height: calc(100vh - 185px); }
+.home { display: flex; justify-content: space-between; align-items: center; height: 100%; }
+
+.lado-esquerdo { max-width: 600px; display: flex; flex-direction: column; gap: 30px; }
+.content p:first-child { color: #ff4d4d; font-weight: 600; font-size: 24px; }
+.content h1 { font-size: 48px; font-weight: 800; }
+
+.btns { display: flex; gap: 16px; }
+
+button { 
+    padding: 14px 20px; border-radius: 16px; border: none; 
+    font-size: 18px; font-weight: 700; cursor: pointer; transition: 0.3s;
+}
+button:first-child { background: #4070f4; color: #fff; }
+button:hover { filter: brightness(0.9); transform: scale(1.02); }
+
+.btn-secundario { background: transparent; border: 2px solid #4070f4; color: #4070f4; }
+.btn-secundario:hover { background: #4070f4; color: #fff; }
+
+.lado-direito img { max-width: 450px; }
+
+/* Responsividade Básica */
+@media (max-width: 1050px) {
+    .home { flex-direction: column; text-align: center; justify-content: center; }
+    .lado-esquerdo { align-items: center; }
+}
